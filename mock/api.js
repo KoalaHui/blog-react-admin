@@ -327,7 +327,7 @@ export default {
   'POST /api/forms': (req, res) => {
     res.send({ message: 'Ok' });
   },
-  'GET /api/tags': mockjs.mock({
+  'GET /api/city': mockjs.mock({
     'list|100': [{ name: '@city', 'value|1-100': 150, 'type|0-2': 1 }],
   }),
   'GET /api/fake_list': getFakeList,

@@ -126,7 +126,7 @@ export async function queryArticle(params) {
 }
 
 export async function addArticle(params) {
-  return request('/api/addArticle', {
+  return request('/api/articles', {
     method: 'POST',
     body: params,
   });
@@ -234,7 +234,7 @@ export async function getProjectDetail(params) {
 
 // 标签
 export async function queryTag(params) {
-  return request(`/api/getTagList?${stringify(params)}`);
+  return request(`/api/tags?${stringify(params)}`);
 }
 
 export async function addTag(params) {
